@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-q1o5&otr7q=a!q(5!g_$6$%79u=diav+h9i-3@8yvv@ezp40zb
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'http://127.0.0.1:5173'
+    '127.0.0.1:5173',
+    'compilador-o2bk.onrender.com'
     # Añade aquí el dominio de tu frontend si lo tienes
 ]
 
