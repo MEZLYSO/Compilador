@@ -23,12 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-q1o5&otr7q=a!q(5!g_$6$%79u=diav+h9i-3@8yvv@ezp40zb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
+    'http://127.0.0.1:5173'
     # Añade aquí el dominio de tu frontend si lo tienes
 ]
-
 
 # Application definition
 
@@ -55,14 +55,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# Lista de orígenes que tienen permitido hacer peticiones a tu API.
-# Tu aplicación de React se está ejecutando en http://localhost:5173.
-CORS_ALLOWED_ORIGINS = [
-   "http://localhost:5173",
-   "http://127.0.0.1:5173",
-    "http://127.0.0.1"
-]
 
+# Cuando CORS_ALLOW_ALL_ORIGINS es True, la lista CORS_ALLOWED_ORIGINS es ignorada.
 # Opcional: si quieres permitir todos los orígenes (no recomendado para producción)
 CORS_ALLOW_ALL_ORIGINS = True
 
