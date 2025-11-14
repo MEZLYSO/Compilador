@@ -61,6 +61,10 @@ MIDDLEWARE = [
 # Opcional: si quieres permitir todos los orígenes (no recomendado para producción)
 CORS_ALLOW_ALL_ORIGINS = True
 
+CORS_ALLOW_ORIGINS = [
+    'https://compilador-six.vercel.app/'
+]
+
 ROOT_URLCONF = 'proyect.urls'
 
 TEMPLATES = [
