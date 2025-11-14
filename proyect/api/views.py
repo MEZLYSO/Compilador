@@ -30,7 +30,6 @@ def main(request):
     # Ejecutamos las instrucciones con el metodo que definimos
     output = run_code(code)
     # Da una respuesta de tipo JSON
-    return Response(
-        {"output":output},
-        status=status.HTTP_200_OK
+    return JsonResponse(
+        {"output":output}
     )
